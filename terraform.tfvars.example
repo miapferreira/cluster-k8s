@@ -1,0 +1,23 @@
+# Exemplo de configuração das variáveis
+# Copie este arquivo para terraform.tfvars e ajuste conforme necessário
+
+# Região AWS
+aws_region = "us-east-1"
+
+# Nome do cluster
+cluster_name = "meu-k8s-cluster"
+
+# Ambiente
+environment = "dev"
+
+# CIDR da VPC
+vpc_cidr = "10.0.0.0/16"
+
+# Tipo de instância do control plane
+control_plane_instance_type = "t2.medium"
+
+# Tipo de instância dos workers
+worker_instance_type = "t2.medium"
+
+# Nome da chave SSH
+key_name = "k8s-key"

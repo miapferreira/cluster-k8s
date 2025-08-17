@@ -35,3 +35,14 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# SSH Keys - NEVER commit private keys!
+ssh/*.key
+ssh/*.pem
+ssh/id_rsa
+ssh/id_rsa.pub
+ssh/k8s-key
+ssh/k8s-key.pub
+
+# Keep only the key generation script
+!ssh/generate_key.sh
